@@ -1,0 +1,123 @@
+/* css general */
+h1, h2, h3, h4, h5{
+    font-family: 'Noto Sans Mono', monospace;
+    margin:0;
+    padding:0;
+}
+
+p, a{
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+body, ul{
+    padding:0;
+    margin:0;
+}
+
+li{
+    list-style: none;
+}
+
+/* nav */
+.navPrimary{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, blue, aqua);
+    padding: 20px 50px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    border: solid 3px white;
+    width:300px;
+}
+
+.menu-item{
+    padding:0px 10px;
+    margin:10px 0px;
+}
+
+.menu-item a {
+    color:white;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.menu-item a:hover{
+    color:black;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: underline wavy;
+}
+
+.cabecera{
+    background-image: url(https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/curiosidades.batanga.com/files/10-interesantes-curiosidades-sobre-el-Universo-10_0.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-cabecera{
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+.noticias{
+    display: flex;
+}
+
+.articulo-noticias{
+    margin:20px;
+    padding: 10px;
+    border:1px dotted black;
+}
+
+.articulo-noticias h2 {
+    margin-bottom: 10px;
+}
+
+.articulo-noticias p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.boton-principal{
+    background-color: crimson;
+    border-radius: 150px;
+    padding:15px;
+    border:0px;
+}
+
+.boton-principal a{
+    color:white;
+    text-transform: capitalize;
+}
+
+.boton-derecha{
+    background-color: crimson;
+    border-radius: 150px;
+    padding:15px;
+    border:0px;
+    float:right;
+}
+
+.boton-centrado{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px){
+    .boton-derecha{
+        background-color: blue;
+    }
+}
